@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="testUI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="zRm-hk-X12">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i3O-a1-qpI">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3j7-wF-VEq">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="467"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z74-LL-sgO">
+                                                <rect key="frame" x="10" y="20" width="35" height="35"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="35" id="Lho-pP-8Vo" customClass="AdaptiveLayoutConstraint" customModule="testUI" customModuleProvider="target">
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="setAdaptiveLayout" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </constraint>
+                                                    <constraint firstAttribute="width" constant="35" id="TjJ-HX-vzd" customClass="AdaptiveLayoutConstraint" customModule="testUI" customModuleProvider="target">
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="setAdaptiveLayout" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </constraint>
+                                                </constraints>
+                                                <state key="normal" backgroundImage="back"/>
+                                            </button>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GrR-dG-ngE">
+                                                <rect key="frame" x="30" y="75" width="315" height="392"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="T97-wU-xCy">
+                                                        <rect key="frame" x="0.0" y="0.0" width="214.5" height="113.5"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="pta-dM-7FC">
+                                                                <rect key="frame" x="0.0" y="0.0" width="208" height="62.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Cleaning Brand" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jk3-dW-26F">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="208" height="36"/>
+                                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="Product name here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W5m-Kn-z4d">
+                                                                        <rect key="frame" x="0.0" y="41" width="208" height="21.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2NY-u3-ohr" customClass="RoundView" customModule="testUI" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="77.5" width="214.5" height="36"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category: Sun / Suncream" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QAb-0y-6i4">
+                                                                        <rect key="frame" x="10" y="10" width="194.5" height="16"/>
+                                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                                                        <color key="textColor" systemColor="systemTealColor" red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="bottom" secondItem="QAb-0y-6i4" secondAttribute="bottom" constant="10" id="L4d-xz-nUj" customClass="AdaptiveLayoutConstraint" customModule="testUI" customModuleProvider="target">
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="setAdaptiveLayout" value="YES"/>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </constraint>
+                                                                    <constraint firstAttribute="height" constant="36" id="Pun-mX-ShP" customClass="AdaptiveLayoutConstraint" customModule="testUI" customModuleProvider="target">
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="setAdaptiveLayout" value="YES"/>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </constraint>
+                                                                    <constraint firstItem="QAb-0y-6i4" firstAttribute="leading" secondItem="2NY-u3-ohr" secondAttribute="leading" constant="10" id="YUl-kI-q4c" customClass="AdaptiveLayoutConstraint" customModule="testUI" customModuleProvider="target">
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="setAdaptiveLayout" value="YES"/>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </constraint>
+                                                                    <constraint firstItem="QAb-0y-6i4" firstAttribute="top" secondItem="2NY-u3-ohr" secondAttribute="top" constant="10" id="bNv-oz-1x7" customClass="AdaptiveLayoutConstraint" customModule="testUI" customModuleProvider="target">
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="setAdaptiveLayout" value="YES"/>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </constraint>
+                                                                    <constraint firstAttribute="trailing" secondItem="QAb-0y-6i4" secondAttribute="trailing" constant="10" id="fAR-Y7-5Zj" customClass="AdaptiveLayoutConstraint" customModule="testUI" customModuleProvider="target">
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="setAdaptiveLayout" value="YES"/>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </constraint>
+                                                                </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="18"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="2NY-u3-ohr" firstAttribute="trailing" secondItem="T97-wU-xCy" secondAttribute="trailingMargin" id="4dc-cJ-iyJ"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="product_detail_example" translatesAutoresizingMaskIntoConstraints="NO" id="4cQ-sh-856">
+                                                        <rect key="frame" x="0.0" y="153.5" width="315" height="198.5"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="T97-wU-xCy" secondAttribute="trailing" id="124-Q6-scx"/>
+                                                    <constraint firstAttribute="bottom" secondItem="4cQ-sh-856" secondAttribute="bottom" constant="40" id="Oij-9F-Uey" customClass="AdaptiveLayoutConstraint" customModule="testUI" customModuleProvider="target">
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="setAdaptiveLayout" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </constraint>
+                                                    <constraint firstItem="T97-wU-xCy" firstAttribute="top" secondItem="GrR-dG-ngE" secondAttribute="top" id="Red-M7-5Wd"/>
+                                                    <constraint firstAttribute="trailing" secondItem="4cQ-sh-856" secondAttribute="trailing" id="SGw-IX-lDK"/>
+                                                    <constraint firstItem="4cQ-sh-856" firstAttribute="top" secondItem="T97-wU-xCy" secondAttribute="bottom" constant="40" id="t2W-JC-1Ym" customClass="AdaptiveLayoutConstraint" customModule="testUI" customModuleProvider="target">
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="setAdaptiveLayout" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </constraint>
+                                                    <constraint firstItem="T97-wU-xCy" firstAttribute="leading" secondItem="GrR-dG-ngE" secondAttribute="leading" id="vCh-tq-wyQ"/>
+                                                    <constraint firstItem="4cQ-sh-856" firstAttribute="leading" secondItem="GrR-dG-ngE" secondAttribute="leading" id="wS1-l5-bhc"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="GrR-dG-ngE" secondAttribute="bottom" id="DAm-Od-FT7"/>
+                                            <constraint firstItem="z74-LL-sgO" firstAttribute="leading" secondItem="3j7-wF-VEq" secondAttribute="leading" constant="10" id="YI8-yT-toc" customClass="AdaptiveLayoutConstraint" customModule="testUI" customModuleProvider="target">
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="setAdaptiveLayout" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </constraint>
+                                            <constraint firstItem="GrR-dG-ngE" firstAttribute="leading" secondItem="3j7-wF-VEq" secondAttribute="leading" constant="30" id="gnQ-HX-SyM" customClass="AdaptiveLayoutConstraint" customModule="testUI" customModuleProvider="target">
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="setAdaptiveLayout" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </constraint>
+                                            <constraint firstItem="GrR-dG-ngE" firstAttribute="top" secondItem="z74-LL-sgO" secondAttribute="bottom" constant="20" id="hyy-rL-qdg" customClass="AdaptiveLayoutConstraint" customModule="testUI" customModuleProvider="target">
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="setAdaptiveLayout" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </constraint>
+                                            <constraint firstAttribute="trailing" secondItem="GrR-dG-ngE" secondAttribute="trailing" constant="30" id="ywi-5N-Jpq" customClass="AdaptiveLayoutConstraint" customModule="testUI" customModuleProvider="target">
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="setAdaptiveLayout" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </constraint>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u0M-Bt-vlB" customClass="RoundView" customModule="testUI" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="467" width="375" height="230"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="93e-9i-LPF">
+                                                <rect key="frame" x="20" y="40" width="345" height="58.5"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="bDK-wv-6lP">
+                                                        <rect key="frame" x="0.0" y="0.0" width="115" height="58.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="$175.99" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LhQ-PC-SvT">
+                                                                <rect key="frame" x="0.0" y="0.0" width="115" height="26.5"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="Price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d7k-vH-DKs">
+                                                                <rect key="frame" x="0.0" y="41.5" width="115" height="17"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Kvh-Hd-pcd">
+                                                        <rect key="frame" x="115" y="0.0" width="115" height="58.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="$175.99" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DNA-Pl-5x4">
+                                                                <rect key="frame" x="0.0" y="0.0" width="115" height="26.5"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="Mate Score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cgt-Mb-kgT">
+                                                                <rect key="frame" x="0.0" y="41.5" width="115" height="17"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="NY8-96-FEa">
+                                                        <rect key="frame" x="230" y="0.5" width="115" height="57"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="B9u-ls-AtW">
+                                                                <rect key="frame" x="45" y="0.0" width="25" height="25"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="25" id="FBt-c8-uGD" customClass="AdaptiveLayoutConstraint" customModule="testUI" customModuleProvider="target">
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="setAdaptiveLayout" value="YES"/>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </constraint>
+                                                                    <constraint firstAttribute="height" constant="25" id="RQy-be-hEt" customClass="AdaptiveLayoutConstraint" customModule="testUI" customModuleProvider="target">
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="setAdaptiveLayout" value="YES"/>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </constraint>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="Save" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X6q-Qx-28Q">
+                                                                <rect key="frame" x="42" y="40" width="31.5" height="17"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NWh-QE-Jxj">
+                                                <rect key="frame" x="104" y="128.5" width="167" height="55"/>
+                                                <state key="normal" backgroundImage="more_button"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="93e-9i-LPF" secondAttribute="trailing" constant="10" id="Nxo-43-mSQ" customClass="AdaptiveLayoutConstraint" customModule="testUI" customModuleProvider="target">
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="setAdaptiveLayout" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </constraint>
+                                            <constraint firstItem="NWh-QE-Jxj" firstAttribute="top" secondItem="93e-9i-LPF" secondAttribute="bottom" constant="30" id="bec-cH-SmI" customClass="AdaptiveLayoutConstraint" customModule="testUI" customModuleProvider="target">
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="setAdaptiveLayout" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </constraint>
+                                            <constraint firstItem="93e-9i-LPF" firstAttribute="top" secondItem="u0M-Bt-vlB" secondAttribute="top" constant="40" id="fly-MD-f3B" customClass="AdaptiveLayoutConstraint" customModule="testUI" customModuleProvider="target">
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="setAdaptiveLayout" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </constraint>
+                                            <constraint firstItem="93e-9i-LPF" firstAttribute="leading" secondItem="u0M-Bt-vlB" secondAttribute="leading" constant="20" id="hk5-MT-9Gh" customClass="AdaptiveLayoutConstraint" customModule="testUI" customModuleProvider="target">
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="setAdaptiveLayout" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </constraint>
+                                            <constraint firstAttribute="height" constant="230" id="o9M-dc-e7U" customClass="AdaptiveLayoutConstraint" customModule="testUI" customModuleProvider="target">
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="setAdaptiveLayout" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </constraint>
+                                            <constraint firstItem="NWh-QE-Jxj" firstAttribute="centerX" secondItem="u0M-Bt-vlB" secondAttribute="centerX" id="xfC-aa-yZZ"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="3j7-wF-VEq" firstAttribute="centerX" secondItem="i3O-a1-qpI" secondAttribute="centerX" id="3gR-Ax-Wc3"/>
+                                    <constraint firstItem="u0M-Bt-vlB" firstAttribute="trailing" secondItem="3Os-sV-tb8" secondAttribute="trailing" id="Afd-OW-ktF"/>
+                                    <constraint firstItem="u0M-Bt-vlB" firstAttribute="leading" secondItem="3Os-sV-tb8" secondAttribute="leading" id="AjB-hW-9qd"/>
+                                    <constraint firstItem="3Os-sV-tb8" firstAttribute="trailing" secondItem="3j7-wF-VEq" secondAttribute="trailing" id="GVx-jl-hbo"/>
+                                    <constraint firstItem="3j7-wF-VEq" firstAttribute="top" secondItem="3Os-sV-tb8" secondAttribute="top" id="JEW-si-9eZ"/>
+                                    <constraint firstItem="u0M-Bt-vlB" firstAttribute="top" secondItem="3j7-wF-VEq" secondAttribute="bottom" id="e5U-S8-QOw"/>
+                                    <constraint firstItem="u0M-Bt-vlB" firstAttribute="bottom" secondItem="3Os-sV-tb8" secondAttribute="bottom" constant="30" id="fno-id-G4f"/>
+                                    <constraint firstAttribute="bottom" secondItem="u0M-Bt-vlB" secondAttribute="bottom" id="qnL-yS-zC1"/>
+                                    <constraint firstAttribute="trailing" secondItem="3j7-wF-VEq" secondAttribute="trailing" id="r9B-3E-V4I"/>
+                                    <constraint firstItem="3j7-wF-VEq" firstAttribute="leading" secondItem="3Os-sV-tb8" secondAttribute="leading" id="vgg-RD-Kxa"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="Kr2-JF-vxm"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="3Os-sV-tb8"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="i3O-a1-qpI" firstAttribute="top" secondItem="zRm-hk-X12" secondAttribute="top" id="2tw-q5-Dm8"/>
+                            <constraint firstItem="z74-LL-sgO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="C2t-3F-lpa" customClass="AdaptiveLayoutConstraint" customModule="testUI" customModuleProvider="target">
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="setAdaptiveLayout" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </constraint>
+                            <constraint firstAttribute="bottom" secondItem="zRm-hk-X12" secondAttribute="bottom" id="QeD-wS-fVB"/>
+                            <constraint firstItem="zRm-hk-X12" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="SXx-bd-Gat"/>
+                            <constraint firstAttribute="trailing" secondItem="zRm-hk-X12" secondAttribute="trailing" id="gsp-G6-PRr"/>
+                            <constraint firstItem="i3O-a1-qpI" firstAttribute="bottom" secondItem="zRm-hk-X12" secondAttribute="bottom" id="jzP-as-bfv"/>
+                            <constraint firstItem="i3O-a1-qpI" firstAttribute="leading" secondItem="zRm-hk-X12" secondAttribute="leading" id="kvE-Hr-gDS"/>
+                            <constraint firstItem="i3O-a1-qpI" firstAttribute="trailing" secondItem="zRm-hk-X12" secondAttribute="trailing" id="sr6-2A-maP"/>
+                            <constraint firstItem="zRm-hk-X12" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="zy6-dy-2MB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="116"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back" width="28" height="28"/>
+        <image name="background" width="377" height="850.5"/>
+        <image name="heart" width="24" height="21.5"/>
+        <image name="more_button" width="167" height="55"/>
+        <image name="product_detail_example" width="321" height="542"/>
+    </resources>
+</document>
